@@ -7,7 +7,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky",
+    "prepare-commit-msg": "devmoji --edit --body",
+    "commit-msg": "commitlint --edit"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.22",
@@ -22,6 +25,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@pinia/nuxt": "^0.5.4",
+    "devmoji": "^2.3.0",
     "nuxt": "^3.13.1",
     "nuxt-security": "2.0.0-rc.9",
     "tailwind": "^4.0.0",
