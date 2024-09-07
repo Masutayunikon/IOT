@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.22",
+    "@heroicons/vue": "^2.1.5",
+    "@nuxt/eslint": "^0.3.13",
+    "@nuxt/icon": "^1.5.1",
+    "@nuxt/image": "^1.8.0",
+    "@nuxtjs/color-mode": "^3.4.4",
+    "@nuxtjs/i18n": "^8.5.2",
+    "@nuxtjs/mdc": "^0.8.3",
+    "@nuxtjs/seo": "2.0.0-rc.11",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "@pinia/nuxt": "^0.5.4",
+    "nuxt": "^3.13.1",
+    "nuxt-security": "2.0.0-rc.9",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.10",
+    "vue": "latest"
+  }
+}
