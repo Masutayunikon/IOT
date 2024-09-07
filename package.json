@@ -9,8 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "prepare": "husky",
-    "prepare-commit-msg": "devmoji --edit --body",
-    "commit-msg": "commitlint --edit"
+    "prepare-commit-msg": "devmoji --edit --commit",
+    "commit-msg": "devmoji --lint"
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.22",
