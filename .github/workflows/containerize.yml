@@ -16,6 +16,8 @@ jobs:
         name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
+        with:
+          images: masutayunikon/nuxt-template
       -
         name: Login to DockerHub
         uses: docker/login-action@v3
