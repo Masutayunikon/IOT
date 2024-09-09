@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.2](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.1...v1.0.2) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 add image name for docker meta ([c823615](https://github.com/Masutayunikon/nuxt-template/commit/c8236158755b477081b6fed67b4de139677ce620))
+* **ci:** 🐛 👷 remove action for repository metadata for docker registery metadata ([45cc726](https://github.com/Masutayunikon/nuxt-template/commit/45cc7269c397ce0a7d5d49e427511276d3b339c4))
+
 ## [1.0.1](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.0...v1.0.1) (2024-09-09)
 
 
