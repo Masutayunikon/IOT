@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.6...v1.0.7) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 set username in plain text ([9e22b13](https://github.com/Masutayunikon/nuxt-template/commit/9e22b139d1705632c2c301f6974b6415ef43f664))
+
 ## [1.0.6](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.5...v1.0.6) (2024-09-09)
 
 
