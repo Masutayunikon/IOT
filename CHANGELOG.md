@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.12](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.11...v1.0.12) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 set image metadata name ([18bb3c6](https://github.com/Masutayunikon/nuxt-template/commit/18bb3c6e15ff0028161cb5ac720e910f1738c470))
+
 ## [1.0.11](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.10...v1.0.11) (2024-09-09)
 
 
