@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}
+          images: masutayunikon/nuxt-template
 
       - name: Build and push
         uses: docker/build-push-action@v6
