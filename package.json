@@ -26,6 +26,7 @@
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@pinia/nuxt": "^0.5.4",
     "devmoji": "^2.3.0",
+    "husky": "^9.1.5",
     "nuxt": "^3.13.1",
     "nuxt-security": "2.0.0-rc.9",
     "tailwind": "^4.0.0",
