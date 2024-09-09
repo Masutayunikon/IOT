@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.4...v1.0.5) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 add plain image for metadata step ([7e258bd](https://github.com/Masutayunikon/nuxt-template/commit/7e258bd845281d604683fa7b6c709b8641eb8284))
+
 ## [1.0.4](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.3...v1.0.4) (2024-09-09)
 
 
