@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.0...v1.0.1) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 fix typo for env variable ([e343100](https://github.com/Masutayunikon/nuxt-template/commit/e34310067299973bfde379186d7f34da833c2f2a))
+
 ## 1.0.0 (2024-09-07)
 
 
