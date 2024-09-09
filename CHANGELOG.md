@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.11](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.10...v1.0.11) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 add push ([44f43b3](https://github.com/Masutayunikon/nuxt-template/commit/44f43b32c1a0973a7dcd0bbefdaae1f819b2ed3e))
+
 ## [1.0.10](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.9...v1.0.10) (2024-09-09)
 
 
