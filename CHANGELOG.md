@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.2...v1.0.3) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 better name for workflow ([3ea5179](https://github.com/Masutayunikon/nuxt-template/commit/3ea51793e64949ae57cebdc64dedff848eb7b872))
+
 ## [1.0.2](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.1...v1.0.2) (2024-09-09)
 
 
