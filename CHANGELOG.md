@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.9...v1.0.10) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 remove context ([facd8ee](https://github.com/Masutayunikon/nuxt-template/commit/facd8ee7a95c3cc7a0af11e1360c41d70630763b))
+
 ## [1.0.9](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.8...v1.0.9) (2024-09-09)
 
 
