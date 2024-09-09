@@ -1,4 +1,4 @@
-name: Containerize
+name: containerize
 
 on:
   release:
