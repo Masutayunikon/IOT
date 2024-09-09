@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.5...v1.0.6) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 set name in lowercase ([c2f6085](https://github.com/Masutayunikon/nuxt-template/commit/c2f6085555a10f651b5a5c622843086f0cc15462))
+
 ## [1.0.5](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.4...v1.0.5) (2024-09-09)
 
 
