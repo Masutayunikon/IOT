@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.3...v1.0.4) (2024-09-09)
+
+
+### Bug Fixes
+
+* **ci:** 🐛 👷 remove image env for docker meta ([4afb389](https://github.com/Masutayunikon/nuxt-template/commit/4afb38923563c68cd907bc599eef72afe3b2065e))
+
 ## [1.0.3](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.2...v1.0.3) (2024-09-09)
 
 
