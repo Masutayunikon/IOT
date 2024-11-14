@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: masutayunikon/nuxt-template
+          images: masutayunikon/iot
 
       - name: Build and push
         uses: docker/build-push-action@v6

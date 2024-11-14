@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/mdc",
-    "nuxt-security",
     "@nuxtjs/seo",
     "@nuxt/image",
     "@nuxt/icon",

@@ -25,6 +25,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@pinia/nuxt": "^0.5.4",
+    "@tailwindcss/forms": "^0.5.9",
     "devmoji": "^2.3.0",
     "husky": "^9.1.5",
     "nuxt": "^3.13.1",

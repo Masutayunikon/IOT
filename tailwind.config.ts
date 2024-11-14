@@ -5,7 +5,9 @@ const srcDir = './'
 
 export default <Partial<Config>>{
   theme: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
   content: [
     `${srcDir}/components/**/*.{vue,js,ts}`,
     `${srcDir}/layouts/**/*.vue`,
