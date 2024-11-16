@@ -2,7 +2,8 @@
 import { Line } from 'vue-chartjs'
 
 
-
+const sensorPing = ref(false)
+const sensorPingError = ref(false)
 const loaded = ref(false)
 
 interface Dataset {
@@ -121,12 +122,45 @@ onMounted(async () => {
 
 });
 
+const pingSensor = async () => {
+  const request = await fetch('https://iot.hik-up.fr/api/v3/ping-sensor', {
+    method: 'POST',
+    headers: {
+      'authToken': `${user.token}`,
+    },
+    body: JSON.stringify({
+      sensor_id: sensor.value?.id
+    })
+  });
+
+  const response = await request.json();
+
+  if (response.success) {
+    sensorPing.value = true;
+
+    setTimeout(() => {
+      sensorPing.value = false;
+    }, 3000);
+  } else {
+    sensorPingError.value = true;
+
+    setTimeout(() => {
+      sensorPingError.value = false;
+    }, 3000);
+  }
+}
+
 
 
 </script>
 
 <template>
+  <YuNotification v-model="sensorPing" title="Sensor pinged" description="The sensor has been pinged successfully" />
+  <YuNotification :error="true" v-model="sensorPingError" title="Error" description="An error occured while pinging the sensor" />
   <div class="flex flex-col gap-16 w-screen overflow-auto">
+    <div class="mb-4">
+      <button @click="pingSensor" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Ping sensor</button>
+    </div>
     <div>
       <Line :data="humidityDataset" :options="{responsive: true, maintainAspectRatio: false}" v-if="loaded" />
     </div>
