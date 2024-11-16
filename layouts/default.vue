@@ -40,7 +40,7 @@
           </transition>
         </Popover>
 
-        <a href="#" class="text-sm/6 font-semibold text-gray-900">Dashboard</a>
+        <NuxtLink to="/dashboard" class="text-sm/6 font-semibold text-gray-900">Dashboard</NuxtLink>
       </PopoverGroup>
     </nav>
     <Dialog class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -92,16 +92,13 @@ import {
   PopoverPanel,
 } from '@headlessui/vue'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
   FingerPrintIcon,
   UserIcon,
   XMarkIcon,
   TrashIcon
 } from '@heroicons/vue/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/vue/20/solid'
+import { ChevronDownIcon } from '@heroicons/vue/20/solid'
 
 const user = [
   { name: 'Profile', description: 'Add or update your profile details', icon: UserIcon, href: '/profile' },
