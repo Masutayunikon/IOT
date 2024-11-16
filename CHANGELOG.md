@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Masutayunikon/IOT/compare/v1.0.12...v1.1.0) (2024-11-14)
+
+
+### Features
+
+* ✨ users routes ([170fdc1](https://github.com/Masutayunikon/IOT/commit/170fdc1d05a620b4878c256acac131a1f9435cf3))
+
 ## [1.0.12](https://github.com/Masutayunikon/nuxt-template/compare/v1.0.11...v1.0.12) (2024-09-09)
 
 
