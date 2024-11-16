@@ -5,6 +5,7 @@ definePageMeta({
 </script>
 
 <template>
+  <VitePwaManifest />
   <div class="w-screen h-screen flex gap-8 flex-col justify-center items-center">
     <h2 class="text-center">Have you signed up before? Tap Yes to log in, or No to create an account!</h2>
     <div class="flex space-x-4">

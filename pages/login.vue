@@ -69,6 +69,7 @@ const login = async () => {
 </script>
 
 <template>
+  <VitePwaManifest />
   <main class="w-screen h-screen flex justify-center items-center">
     <div class="w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-xl p-4 rounded-3xl border-2 border-gray-200">

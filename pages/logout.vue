@@ -22,7 +22,7 @@ onBeforeMount(async () => {
 </script>
 
 <template>
-
+  <VitePwaManifest />
 </template>
 
 <style scoped>

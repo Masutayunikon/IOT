@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       theme_color: 'white',
       background_color: '#ffffff',
       icons: [
-        { src: '/arduino.svg', sizes: '192x192', type: 'image/svg' },
+        { src: '/logo-192.png', sizes: '192x192', type: 'image/png' },
       ],
       start_url: '/',
       display: 'standalone',
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     },
     workbox: {
       cleanupOutdatedCaches: true,
-      navigateFallback: '/en-US',
+      navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
   },
