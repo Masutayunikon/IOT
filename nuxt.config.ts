@@ -14,6 +14,8 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/eslint"
   ],
+  plugins: [
+  ],
 
   // i18n module configuration
   i18n: {

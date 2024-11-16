@@ -124,7 +124,12 @@ onBeforeMount(async () => {
     </button>
 
     <div class="mt-6">
-      <YuSensor v-for="sensor in userSensors" :key="sensor.token" :sensor="sensor" />
+      <YuSensor
+          v-for="sensor in userSensors"
+          :key="sensor.token"
+          :sensor="sensor"
+          @click="useRouter().push(`/sensor/${sensor.token}`)"
+      />
     </div>
   </main>
 

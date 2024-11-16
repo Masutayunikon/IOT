@@ -68,17 +68,17 @@ const getLuxSvg = (lux: number | string | null) => {
         <p class="text-sm overflow-hidden whitespace-nowrap text-ellipsis">{{ Props.sensor.description }}</p>
       </div>
       <div class="ml-auto flex gap-4 w-auto flex-wrap">
-        <div class="w-20">
+        <div class="w-12">
           <img src="/humidity-svgrepo-com.svg" alt="humidity" class="w-8 h-8" />
-          <p class="text-sm">{{ lastHumidity ?? "N/A" }}%</p>
+          <p class="text-sm overflow-hidden whitespace-nowrap text-ellipsis">{{ lastHumidity ?? "N/A" }}%</p>
         </div>
-        <div class="w-20">
+        <div class="w-12">
           <img src="/temperatures-heat-svgrepo-com.svg" alt="temperature" class="w-8 h-8" />
-          <p class="text-sm">{{ lastTemperature ?? "N/A"  }}°C</p>
+          <p class="text-sm overflow-hidden whitespace-nowrap text-ellipsis">{{ lastTemperature ?? "N/A"  }}°C</p>
         </div>
-        <div class="w-20">
+        <div class="w-12">
           <img :src="`/${getLuxSvg(lastLightLevel)}`" alt="light level" class="w-8 h-8" />
-          <p class="text-sm">{{ lastLightLevel ?? "N/A" }} lux</p>
+          <p class="text-sm overflow-hidden whitespace-nowrap text-ellipsis">{{ lastLightLevel ?? "N/A" }} lux</p>
         </div>
       </div>
     </div>
