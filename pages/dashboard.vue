@@ -24,7 +24,7 @@ enum DataS {
 interface DataPoint {
   id:    number;
   date:  string;
-  dataF: number;
+  dataF: string;
   dataI: number;
   dataS: DataS;
 }
@@ -106,7 +106,7 @@ onBeforeMount(async () => {
       }
     });
 
-    console.table(userSensors.value);
+    //console.table(userSensors.value);
 
 
   }

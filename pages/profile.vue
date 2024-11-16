@@ -70,7 +70,7 @@ onBeforeMount(async () => {
   const response = await request.json();
 
   if (response.success) {
-    console.log(response);
+    //console.log(response);
     userData.value.email = response.user.email || '';
     userData.value.name = response.user.name || '';
     userData.value.pseudo = response.user.pseudo || '';

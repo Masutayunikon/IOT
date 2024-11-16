@@ -31,14 +31,12 @@ const lastHumidity = ref<string | number | null>(0);
 const lastLightLevel = ref<string | number | null>(0);
 const lastTemperature = ref<string | number | null>(0);
 
-// for last humidity find the last dataPoint with dataS as Humidity and date as the latest
-const lastHumidityTemp = Props.sensor.dataPoint.filter((dataPoint) => dataPoint.dataS === DataS.Humidity).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-console.log(lastHumidityTemp);
-lastHumidity.value = lastHumidityTemp ? lastHumidityTemp.dataI ?? lastHumidityTemp.dataF : null;
-const lastLightLevelTemp = Props.sensor.dataPoint.filter((dataPoint) => dataPoint.dataS === DataS.LightLevel).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-lastLightLevel.value = lastLightLevelTemp ? lastLightLevelTemp.dataI ?? lastLightLevelTemp.dataF : null;
-const lastTemperatureTemp = Props.sensor.dataPoint.filter((dataPoint) => dataPoint.dataS === DataS.Temperature).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())[0];
-lastTemperature.value = lastTemperatureTemp ? lastTemperatureTemp.dataI ?? lastTemperatureTemp.dataF : null;
+const lastHumidityTemp = Props.sensor.dataPoint.filter((dataPoint) => dataPoint.dataS === DataS.Humidity).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+lastHumidity.value = lastHumidityTemp.length > 0 && lastHumidityTemp[lastHumidityTemp.length - 1] ? lastHumidityTemp[lastHumidityTemp.length - 1].dataI ?? lastHumidityTemp[lastHumidityTemp.length - 1].dataF : null;
+const lastLightLevelTemp = Props.sensor.dataPoint.filter((dataPoint) => dataPoint.dataS === DataS.LightLevel).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+lastLightLevel.value = lastLightLevelTemp.length > 0 && lastLightLevelTemp[lastLightLevelTemp.length - 1] ? lastLightLevelTemp[lastLightLevelTemp.length - 1].dataI ?? lastLightLevelTemp[lastLightLevelTemp.length - 1].dataF : null;
+const lastTemperatureTemp = Props.sensor.dataPoint.filter((dataPoint) => dataPoint.dataS === DataS.Temperature).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+lastTemperature.value = lastTemperatureTemp.length > 0 && lastTemperatureTemp[lastTemperatureTemp.length - 1] ? lastTemperatureTemp[lastTemperatureTemp.length - 1].dataI ?? lastTemperatureTemp[lastTemperatureTemp.length - 1].dataF : null;
 
 const getLuxSvg = (lux: number | string | null) => {
 
@@ -72,15 +70,15 @@ const getLuxSvg = (lux: number | string | null) => {
       <div class="ml-auto flex gap-4 w-auto flex-wrap">
         <div class="w-20">
           <img src="/humidity-svgrepo-com.svg" alt="humidity" class="w-8 h-8" />
-          <p class="text-sm">{{ lastHumidity || "N/A" }}%</p>
+          <p class="text-sm">{{ lastHumidity ?? "N/A" }}%</p>
         </div>
         <div class="w-20">
           <img src="/temperatures-heat-svgrepo-com.svg" alt="temperature" class="w-8 h-8" />
-          <p class="text-sm">{{ lastTemperature || "N/A"  }}°C</p>
+          <p class="text-sm">{{ lastTemperature ?? "N/A"  }}°C</p>
         </div>
         <div class="w-20">
           <img :src="`/${getLuxSvg(lastLightLevel)}`" alt="light level" class="w-8 h-8" />
-          <p class="text-sm">{{ lastLightLevel || "N/A" }} lux</p>
+          <p class="text-sm">{{ lastLightLevel ?? "N/A" }} lux</p>
         </div>
       </div>
     </div>
