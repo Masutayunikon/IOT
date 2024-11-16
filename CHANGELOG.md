@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Masutayunikon/IOT/compare/v1.2.0...v1.3.0) (2024-11-16)
+
+
+### Features
+
+* ✨ ping ([ada690f](https://github.com/Masutayunikon/IOT/commit/ada690f3e9b0bd713640973aef84e4dc693b19fc))
+
 ## [1.2.0](https://github.com/Masutayunikon/IOT/compare/v1.1.0...v1.2.0) (2024-11-16)
 
 
