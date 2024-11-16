@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/Masutayunikon/IOT/compare/v1.1.0...v1.2.0) (2024-11-16)
+
+
+### Features
+
+* ✨ dashboards with the users sensors ([7a484ac](https://github.com/Masutayunikon/IOT/commit/7a484ac438483819ef8ac8678c96fb378f3bda56))
+
+
+### Bug Fixes
+
+* 🐛 dashboard ([afbf074](https://github.com/Masutayunikon/IOT/commit/afbf074d00ab59ab1517a7d7848b257c5873252b))
+
 ## [1.1.0](https://github.com/Masutayunikon/IOT/compare/v1.0.12...v1.1.0) (2024-11-14)
 
 
